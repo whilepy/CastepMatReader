@@ -31,7 +31,7 @@ public:
 		len(0),
 		numElemt(0)
 	{
-		std::ifstream ifs("Si_Optics.cst_ome", std::ios::binary | std::ios::in);
+		std::ifstream ifs(filename, std::ios::binary | std::ios::in);
 		if (!ifs)
 		{
 			std::cerr << "打开文件失败!";
